@@ -10,7 +10,7 @@
         <!--Key 클래스는 Button을 상속받고있음-->
         <Style TargetType="{x:Type control:Key}">
             <Setter Property="Margin" Value="1"/>
-            <Setter Property="Background" Value="#F1685E"/>
+            <Setter Property="Background" Value="Gray"/>
             <Setter Property="Foreground" Value="#FFFFFF"></Setter>
             <Setter Property="FontSize" Value="22"/>
             <Setter Property="BorderThickness" Value="1"/>
@@ -27,7 +27,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type control:Key}">
-                        <Border x:Name="border" SnapsToDevicePixels="True" Background="#F1685E" CornerRadius="3" Margin="1" Padding="1,0">
+                        <Border x:Name="border" SnapsToDevicePixels="True" Background="gray" CornerRadius="3" Margin="1" Padding="1,0">
                             <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                         </Border>
                         <!--<ControlTemplate.Triggers>
@@ -46,7 +46,7 @@
         </Style>
     </control:VirtualKeyboard.Resources>
 
-    <Grid Background="White">
+    <Grid Background="white">
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition />
@@ -69,7 +69,7 @@
                 <ColumnDefinition />
                 <ColumnDefinition />
                 <ColumnDefinition />
-                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="1.8*"/>
             </Grid.ColumnDefinitions>
             <!--#region Grid.Row=0 Content-->
             <control:Key KeyCode="OEM_3" Grid.Column="0"/>
@@ -156,7 +156,7 @@
         </Grid>
         <Grid Grid.Row="3">
             <Grid.ColumnDefinitions >
-                <ColumnDefinition Width="2.2*"/>
+                <ColumnDefinition Width="2*"/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -167,7 +167,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
-                <ColumnDefinition Width="2.2*"/>
+                <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
             <!--#region Grid.Row=3 Content-->
             <control:Key KeyCode="SHIFT" Grid.Column="0"  FontSize="13"/>
